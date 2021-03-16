@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <title>Sinai Park Portfolio</title>
+
+  <link rel="stylesheet" href="about.component.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <ul class="topnav">
+    <li><a href="../about/about.component.html">About</a></li>
+    <li><a href="../portfolio/portfolio.component.html">Portfolio</a></li>
+    <li><a href="../resume/resume.component.html">Resume</a></li>
+    <li><a href="../contact/contact.component.html">Contact</a></li>
+  </ul>
+
+
+  <div class="top">
+    <p class="firstname">SINAI</p>
+    <p class="description">
+      [ SOFTWARE <br />
+      DEVELOPER<br />
+      DESIGNER<br />
+      PHOTOGRAPHER<br />
+      THINKER <br />READER ]
+    </p>
+    <p class="lastname">PARK</p>
+
+    <div class="bio">
+      <img src="../assets/watercolor.png" alt="image" />
+    </div>
+    <div class="textbox">
+      <p>
+        Biography: <br />SINAI PARK I'm a Computer Programmer, from a unique
+        background. I am South Korean by birth, Chinese by upbringing, and
+        American by education. My interests lie in the art of user interface and
+        user experience, as well as the ability to handle data and facilitate an
+        easier life for all users and people in the world. I seek to further
+        growth inside of me and to learn forever with the help of mentors,
+        teachers, mentees, and God.
+      </p>
+    </div>
+  </div>
+</body>
+<div id="page-container">
+  <div id="content-wrap">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="text-center text-white" style="background-color:#ffffff;">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights
+                Reserved by
+                <a href="#">Sinai Park, UI/UX and Frontend Developer</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+    </div>
+  </footer>
