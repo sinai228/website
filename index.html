@@ -1,86 +1,2588 @@
 <!DOCTYPE html>
+<html class='no-js' >
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" />
-  <title>Sinai Park Portfolio</title>
-
-  <link rel="stylesheet" href="about.component.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-  <ul class="topnav">
-    <li><a href="../about/about.component.html">About</a></li>
-    <li><a href="../portfolio/portfolio.component.html">Portfolio</a></li>
-    <li><a href="../resume/resume.component.html">Resume</a></li>
-    <li><a href="../contact/contact.component.html">Contact</a></li>
-  </ul>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-  <div class="top">
-    <p class="firstname">SINAI</p>
-    <p class="description">
-      [ SOFTWARE <br />
-      DEVELOPER<br />
-      DESIGNER<br />
-      PHOTOGRAPHER<br />
-      THINKER <br />READER ]
-    </p>
-    <p class="lastname">PARK</p>
+		<title>Sinai's Portfolio</title>
 
-    <div class="bio">
-      <img src="../assets/watercolor.png" alt="image" />
-    </div>
-    <div class="textbox">
-      <p>
-        Biography: <br />SINAI PARK I'm a Computer Programmer, from a unique
-        background. I am South Korean by birth, Chinese by upbringing, and
-        American by education. My interests lie in the art of user interface and
-        user experience, as well as the ability to handle data and facilitate an
-        easier life for all users and people in the world. I seek to further
-        growth inside of me and to learn forever with the help of mentors,
-        teachers, mentees, and God.
-      </p>
-    </div>
-  </div>
-</body>
-<div id="page-container">
-  <div id="content-wrap">
-    <router-outlet></router-outlet>
-  </div>
-  <footer class="text-center text-white" style="background-color:#ffffff;">
-    <!-- Grid container -->
-    <div class="container p-4">
+		<!--[if lt IE 9]>
+		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-      <!-- Section: Social media -->
-      <section class="mb-4">
+		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2021 All Rights
-                Reserved by
-                <a href="#">Sinai Park, UI/UX and Frontend Developer</a>.
-              </p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-github"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </section>
+		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.theme.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.transitions.css' >
+		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<link rel='stylesheet' type='text/css' href='css/color-default.css' >
 
 
-    </div>
-  </footer>
+	</head>
+
+	<body>
+
+		<!--=============================================================================
+			Preloader
+		===============================================================================-->
+		<div id='preloader' >
+			<div class='loader' >
+				<img src='img/load.gif' alt='symp' >
+			</div>
+		</div>
+
+
+		<!--=============================================================================
+			Main Wrapper
+		===============================================================================-->
+		<div id='wrapper' >
+
+			<!--=============================================================================
+				Front Section
+			===============================================================================-->
+			<section class='front-section' >
+
+				<div class='container' >
+
+
+					<div class='transition-mask' ></div>
+
+
+					<div class='front-person-img' >
+
+						<!--person's image-->
+						<img src='./img/man11.jpg' alt='image' >
+						<!--/person's image-->
+
+					</div>
+
+					<!--person's titles-->
+					<div class='front-person-titles' >
+
+						<!--title1-->
+						<span class='t1' >
+							Software Developer
+						</span>
+						<!--/title1-->
+
+						<!--title2-->
+						<span class='t2' >
+							UI/UX Designer
+						</span>
+						<!--/title2-->
+
+						<!--title3-->
+						<span class='t3' >
+							Thinker & Reader
+						</span>
+						<!--/title3-->
+
+					</div>
+					<!--/person's titles-->
+
+					<nav class='front-person-links' >
+
+						<!--
+							navigation links, data-section attribute points towards the section with id to be opened.
+						-->
+
+						<ul>
+
+							<li>
+								<a href='#' data-section='about' >About Me</a>
+							</li>
+
+							<li>
+								<a href='#' data-section='resume' >Resume</a>
+							</li>
+
+							<li>
+								<a href='#' data-section='portfolio' >Portfolio</a>
+							</li>
+							<li>
+								<a href='#' data-section='contact' >Contact</a>
+							</li>
+
+							<!-- <li>
+								<a href='#' data-section='blog'>Services</a>
+							</li> -->
+							<!-- <li>
+								<a href='#' >Hire Me!</a>
+							</li> -->
+
+						</ul>
+
+					</nav>
+
+
+
+					<div class='front-heading text-center' >
+
+						<h2>
+							Sinai Park
+						</h2>
+						<h5>
+							Tech + Design + Thoughts </br>
+						</h5>
+
+
+					</div>
+
+
+
+
+
+				</div>
+
+			</section>
+			<!--=============================================================================
+				/Front Section
+			===============================================================================-->
+
+			<!--=============================================================================
+				About Section
+			===============================================================================-->
+			<section id='about' class='about-section section' >
+
+				<div class='basic-info section-block' >
+
+					<div class='container' >
+
+						<div class='section-header text-center' >
+
+							<h2>Basic Info About Me</h2>
+
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
+
+
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-4' >
+								<div class='about-person-img' >
+
+									<img src='img/ man1.jpg' alt='symp'>
+
+								</div>
+
+							</div>
+
+
+							<div class='col-md-8 about-info' >
+
+
+
+
+								<p>
+								Hello, My name is Sinai Park, currently obtaining a BS. Computer Science degree at Calvin University.
+								My current interests are in front end development and user experience, but not limited to the lowest level of coding.
+								I seek a life-long learning process in the rising STEM field as someone with a creative, bright mind to look beyond the
+								horizon. </br></br>
+								My goal in life is to provide the needs of various people in the world, in the current society with technology.
+							</p>
+
+								<div class='clearfix' ></div>
+
+
+								<ul class='info-list' >
+
+									<li>
+										<div class='inner' >
+											<h4>Name</h4>
+											<p>Sinai Park</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Age</h4>
+											<p>20 Years</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Website</h4>
+											<p>github.com/sinai228</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Hometown</h4>
+											<p>Seoul, South Korea</p>
+										</div>
+									</li>
+
+
+
+								</ul>
+
+								<a href='#' class='symp-btn' >Hire Me For Work</a>
+
+								<a href='./img/resume.pdf' class='symp-btn link-btn' ><i class='ion-ios-download' ></i>Download Resume</a>
+
+							</div>
+
+
+
+						</div>
+
+
+
+
+					</div>
+
+
+				</div>
+
+				<div class='about-icons section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-ios-lightbulb' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Creative</h4>
+
+										<p>
+											Creativity and ingenious thoughts.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-trophy' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Leader</h4>
+
+										<p>
+											Frontier thinking and actions
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-ios-glasses' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Curious</h4>
+
+										<p>
+											Curious to learn
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-ios-bolt' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Listener</h4>
+
+										<p>
+											Quick to listen, slow to speak.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+
+
+							<!-- <div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-help-buoy' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Helper</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-happy' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Thinker</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-ios-game-controller-b' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Designer</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+
+									<div class='icon' >
+										<i class='ion-ios-pulse-strong' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Healthy</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+
+								</div>
+							</div> -->
+
+
+
+
+						</div>
+
+
+					</div>
+				</div>
+
+				<!-- <div class='funfacts-block section-block' data-stellar-background-ratio='.2' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-md-3 col-sm-6 funfact' >
+								<div class='content' >
+									<h4>243</h4>
+									<p>Awards Won</p>
+								</div>
+							</div>
+
+							<div class='col-md-3 col-sm-6 funfact' >
+								<div class='content' >
+									<h4>845</h4>
+									<p>Happy Customers</p>
+								</div>
+							</div>
+
+							<div class='col-md-3 col-sm-6 funfact' >
+								<div class='content' >
+									<h4>938</h4>
+									<p>Projects Done</p>
+								</div>
+							</div>
+
+							<div class='col-md-3 col-sm-6 funfact' >
+								<div class='content' >
+									<h4>342</h4>
+									<p>Games Played</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div> -->
+
+				<!-- <div class='testimonials-block section-block' >
+					<div class='container' >
+
+						<div class='section-header text-center' >
+
+							<h2 class='animate text-over-block' >Testimonials</h2>
+
+
+
+							<div class='divider-draft center' ></div>
+
+
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-8 col-md-offset-2' >
+
+								<div class='testimonials-slider' >
+
+									<div class='testimonial' >
+										<p>
+
+											Ad optere volibus nec, sea ei civibus prasent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium queum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium his eu, cu congue consul cetero.
+
+										</p>
+
+										<div class='author' >
+											<h4>Jack Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+									<div class='testimonial' >
+										<p>
+											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
+										</p>
+
+										<div class='author' >
+											<h4>Jessica Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+									<div class='testimonial' >
+										<p>
+											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
+										</p>
+
+										<div class='author' >
+											<h4>Jim Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div> -->
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<!-- <li>
+										<a href='#' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li> -->
+									<li>
+										<a href='https://www.linkedin.com/in/sinai-park-755b72173/' >
+											<i class='ion-social-linkedin' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://vsco.co/sinai0228/gallery' >
+											<i class='ion-ios-camera' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='www.sinai228.github.com' >
+											<i class='ion-social-github' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/About Section
+			===============================================================================-->
+
+			<!--=============================================================================
+				Resume Section
+			===============================================================================-->
+			<section id='resume' class='resume-section section' >
+
+				<div class='container' >
+					<div class='row' >
+						<div class='col-md-6 col-md-offset-3' >
+							<div class='section-header text-center' >
+
+								<h2 class='animate text-over-block' >My Resume</h2>
+
+								<!--divider-->
+								<div class='divider-draft center' ></div>
+								<!--/divider-->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='timeline-block section-block' >
+					<div class='container' >
+						<ul class='timeline' >
+
+							<li class='timeline-header' >
+								<h4>Education</h4>
+							</li>
+
+							<li>
+
+								<div class='timeline-desc' >
+
+									<h4>2018-2021</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Bachelor of Science Degree</h4>
+									<span>@ Calvin University, Grand Rapids, MI</span>
+
+									<p>
+										Studied and gained knowledge on the various skillsets of algorithmic thinking, coding, teamwork, and analytical skills.
+									</p>
+
+								</div>
+
+							<!-- </li>
+
+							<li class='inverse' >
+
+								<div class='timeline-desc' >
+
+									<h4>2005-2007</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Masters Degree</h4>
+									<span>@CSS College Larkana</span>
+
+									<p>
+										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									</p>
+
+								</div>
+
+							</li>
+
+							<li>
+
+								<div class='timeline-desc' >
+
+									<h4>2005-2007</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Masters Degree</h4>
+									<span>@CSS College Larkana</span>
+
+									<p>
+										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									</p>
+
+								</div>
+
+							</li> -->
+
+
+							<li class='timeline-header' >
+								<h4>Experience</h4>
+							</li>
+
+
+							<li>
+
+								<div class='timeline-desc' >
+
+									<h4>Jan.2021-current</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Code Instructor </h4>
+									<span>@Girls Who Code</span>
+
+									<p>
+										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									</p>
+
+								</div>
+
+							</li>
+
+							<li class='inverse' >
+
+								<div class='timeline-desc' >
+
+									<h4>Feb.2021-current</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>CS Lab Monitor</h4>
+									<span>@Calvin University</span>
+
+									<p>
+										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									</p>
+
+								</div>
+
+							</li>
+
+							<li>
+
+								<div class='timeline-desc' >
+
+									<h4>Aug.2019-current</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Desk Receptionist</h4>
+									<span>@Calvin University</span>
+
+									<p>
+										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									</p>
+
+								</div>
+
+							</li>
+							<li>
+
+								<div class='timeline-desc'>
+
+									<h4>Aug.2018-current</h4>
+
+								</div>
+
+								<div class='timeline-content'>
+
+									<h4>Women In Computing, VP</h4>
+									<span>@Calvin University</span>
+
+									<p>
+										Empowered women in the STEM field, built networks, and connected with various mentors and mentees
+									</p>
+
+								</div>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class='hobbies-block bg-lightgray section-block' >
+					<div class='container' >
+
+						<div class='section-header text-center' >
+							<h2 class='animate text-over-block' >My Hobbies</h2>
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-coffee' ></i>
+									</div>
+
+									<h4>Coffee</h4>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-ios-bookmarks' ></i>
+									</div>
+
+									<h4>Reading</h4>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-ios-chatboxes' ></i>
+									</div>
+
+									<h4>Chat</h4>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-android-walk' ></i>
+									</div>
+
+									<h4>Walking</h4>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-barbell-outline' ></i>
+									</div>
+
+									<h4>Exercising</h4>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-2 col-sm-4 col-xs-6' >
+
+								<div class='hobby' >
+
+									<div class='icon' >
+										<i class='ion-ios-film' ></i>
+									</div>
+
+									<h4>Movies</h4>
+
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class='skills-block section-block' >
+
+					<div class='container' >
+
+						<div class='section-header text-center' >
+							<h2 class='animate text-over-block' >My Skills</h2>
+
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
+
+						</div>
+
+
+						<div class='row' >
+
+							<div class='col-md-6' >
+
+								<div class='skill' >
+
+									<h4>HTML/CSS</h4>
+
+									<div class='skill-bar' data-percent='80' >
+										<div class='bar' >
+											<div class='percent' >80%</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class='skill' >
+
+									<h4>C/C++/C#</h4>
+
+									<div class='skill-bar' data-percent='70' >
+										<div class='bar' >
+											<div class='percent' >70%</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class='skill' >
+
+									<h4>Photoshop</h4>
+
+									<div class='skill-bar' data-percent='90' >
+										<div class='bar' >
+											<div class='percent' >90%</div>
+										</div>
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+							<div class='col-md-6' >
+
+								<div class='skill' >
+
+									<h4>Python</h4>
+
+									<div class='skill-bar' data-percent='95' >
+										<div class='bar' >
+											<div class='percent' >95%</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class='skill' >
+
+									<h4>Javascript</h4>
+
+									<div class='skill-bar' data-percent='75' >
+										<div class='bar' >
+											<div class='percent' >75%</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class='skill' >
+
+									<h4>Language (English, Korean, Chinese)</h4>
+
+									<div class='skill-bar' data-percent='90' >
+										<div class='bar' >
+											<div class='percent' >90%</div>
+										</div>
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.linkedin.com/in/sinai-park-755b72173/'>
+											<i class='ion-social-linkedin'></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://vsco.co/sinai0228/gallery'>
+											<i size="32px"class='ion-ios-camera'></i>
+										</a>
+									</li>
+									<li>
+										<a href='www.sinai228.github.com'>
+											<i class='ion-social-github'></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Resume Section
+			===============================================================================-->
+
+
+			<!--=============================================================================
+				Services Section
+			===============================================================================-->
+			<section id='services' class='services-section section' >
+
+				<div class='container' >
+					<div class='row' >
+						<div class='col-md-6 col-md-offset-3' >
+							<div class='section-header main-title text-center' >
+
+								<h2 class='animate text-over-block' >My Services</h2>
+
+								<!--divider-->
+								<div class='divider-draft center' ></div>
+								<!--/divider-->
+
+								<p>
+									I provide <b>high quality</b> services. My services that I provide are listed below. Hope you will like them. Lorem ipsum dolor.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='services-block section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-camera' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Photography</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-code' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Coding</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-lightbulb' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Creativity</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-monitor' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Web Design</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-camera' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Photography</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-code' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Coding</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-lightbulb' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Creativity</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-monitor' ></i>
+									</div>
+
+									<div class='content' >
+
+										<h4>Web Design</h4>
+
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='pricing-block section-block' >
+					<div class='container' >
+
+						<div class='section-header text-center' >
+							<h2 class='animate text-over-block' >Pricing</h2>
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
+							<p>
+								How much I charge
+							</p>
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-4 text-center' >
+
+								<div class='pricing-table' >
+
+									<div class='header' >
+
+										<h4>Personal</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >29</span>
+											<span class='period' >/mo</span>
+										</div>
+
+
+									</div>
+
+									<ul class='table-items' >
+
+										<li>
+											Logo Design
+										</li>
+										<li>
+											PSD to HTML
+										</li>
+										<li>
+											Fixed to Responsive
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Photography
+										</li>
+
+									</ul>
+
+									<a href='#' class='table-btn' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-4 text-center' >
+
+								<div class='pricing-table' >
+
+									<div class='header' >
+
+										<h4>Creative</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >39</span>
+											<span class='period' >/mo</span>
+										</div>
+
+									</div>
+
+									<ul class='table-items' >
+
+										<li>
+											Logo Design
+										</li>
+										<li>
+											PSD to HTML
+										</li>
+										<li>
+											Fixed to Responsive
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Photography
+										</li>
+
+									</ul>
+
+									<a href='#' class='table-btn' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-4 text-center' >
+
+								<div class='pricing-table' >
+
+									<div class='header' >
+
+										<h4>Ultimate</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >42</span>
+											<span class='period' >/mo</span>
+										</div>
+
+
+									</div>
+
+									<ul class='table-items' >
+
+										<li>
+											Logo Design
+										</li>
+										<li>
+											PSD to HTML
+										</li>
+										<li>
+											Fixed to Responsive
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Photography
+										</li>
+
+									</ul>
+
+									<a href='#' class='table-btn' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class='process-block bg-lightgray section-block' >
+					<div class='container' >
+
+						<div class='section-header text-center' >
+							<h2>Work Process</h2>
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-3' >
+
+								<div class='process' >
+
+									<div class='number' >
+										<span>01</span>
+									</div>
+
+									<div class='content' >
+
+										<h4>Design</h4>
+
+										<p>
+											Lorem ipsum dolor sit amet is simply a dummy text used by typeset industries. Lorem ipsum dolor.
+										</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-3' >
+
+								<div class='process' >
+
+									<div class='number' >
+										<span>02</span>
+									</div>
+
+									<div class='content' >
+
+										<h4>Develop</h4>
+
+										<p>
+											Lorem ipsum dolor sit amet is simply a dummy text used by typeset industries. Lorem ipsum dolor.
+										</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-3' >
+
+								<div class='process' >
+
+									<div class='number' >
+										<span>03</span>
+									</div>
+
+									<div class='content' >
+
+										<h4>Publish</h4>
+
+										<p>
+											Lorem ipsum dolor sit amet is simply a dummy text used by typeset industries. Lorem ipsum dolor.
+										</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-3' >
+
+								<div class='process last' >
+
+									<div class='number' >
+										<span>04</span>
+									</div>
+
+									<div class='content' >
+
+										<h4>Enjoy</h4>
+
+										<p>
+											Lorem ipsum dolor sit amet is simply a dummy text used by typeset industries. Lorem ipsum dolor.
+										</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- <div class='testimonials-block section-block' >
+					<div class='container' >
+
+						<div class='section-header text-center' >
+
+							<h2 class='animate text-over-block' >Testimonials</h2>
+
+
+							<div class='divider-draft center' ></div>
+
+
+
+						</div>
+
+						<div class='row' >
+
+							<div class='col-md-8 col-md-offset-2' >
+
+								<div class='testimonials-slider' >
+
+									<div class='testimonial' >
+										<p>
+											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
+										</p>
+
+										<div class='author' >
+											<h4>Jack Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+									<div class='testimonial' >
+										<p>
+											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
+										</p>
+
+										<div class='author' >
+											<h4>Jessica Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+									<div class='testimonial' >
+										<p>
+											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
+										</p>
+
+										<div class='author' >
+											<h4>Jim Smith</h4>
+											<p>CEO at Google</p>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div> -->
+
+
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='#' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-twitter' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-pinterest' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-dribbble' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Services Section
+			===============================================================================-->
+
+
+			<!--=============================================================================
+				Portfolio Section
+			===============================================================================-->
+			<section id='portfolio' class='portfolio-section section' >
+
+				<div class='portfolio-block section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+							<div class='col-md-6 col-md-offset-3' >
+
+								<div class='section-header text-center' >
+
+									<h2 class='animate text-over-block' >Portfolio</h2>
+
+									<!--divider-->
+									<div class='divider-draft center' ></div>
+									<!--/divider-->
+
+									<p>
+										Check out my software projects, data schemas, and user interface layouts.
+									</p>
+
+								</div>
+
+							</div>
+						</div>
+
+						<div id='portfolio-filters' >
+							<ul>
+								<li>
+									<a href='#' data-group='all' class='active' >All</a>
+								</li>
+								<li>
+									<a href='#' data-group='web' >Web</a>
+								</li>
+								<li>
+									<a href='#' data-group='tech' >Tech</a>
+								</li>
+								<li>
+									<a href='#' data-group='photography' >Photography</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id='portfolio-grid' class='portfolio-items' >
+
+							<div class='item' data-groups='["all","web","photography"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/1.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/1.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","photography","tech"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/3.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/3.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","web","tech"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/4.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/4.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","web"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/5.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/5.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","tech"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/6.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/6.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","photography"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/6.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/6.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","web"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/7.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/8.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","tech"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/8.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/8.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class='item' data-groups='["all","photography"]' >
+								<div class='inner' >
+
+									<img alt='symp' src='img/portfolio/9.png' >
+
+									<div class='caption' >
+
+										<div class='caption-inner' >
+
+											<h4>Project Title</h4>
+
+											<ul class='links' >
+
+												<li>
+													<a href='work.html' >
+														<i class='ion-ios-plus-empty' ></i>
+													</a>
+												</li>
+
+												<li>
+													<a href='img/portfolio/9.png' class='image-link' >
+														<i class='ion-ios-search' ></i>
+													</a>
+												</li>
+
+											</ul>
+
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.linkedin.com/in/sinai-park-755b72173/'>
+											<i class='ion-social-linkedin'></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://vsco.co/sinai0228/gallery'>
+											<i class='ion-ios-camera'></i>
+										</a>
+									</li>
+									<li>
+										<a href='www.sinai228.github.com'>
+											<i class='ion-social-github'></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</section>
+			<!--=============================================================================
+				/Portfolio Section
+			===============================================================================-->
+
+
+			<!--=============================================================================
+				Blog Section
+			===============================================================================-->
+			<section id='blog' class='blog-section section' >
+
+				<div class='container' >
+
+					<div class='row' >
+
+						<div class='col-md-6 col-md-offset-3' >
+							<div class='section-header text-center' >
+
+								<h2>My Blog</h2>
+
+								<!--divider-->
+								<div class='divider-draft center' ></div>
+								<!--/divider-->
+
+								<p>
+									This is my blog where my thoughts live. Check it out to know more about me. Lorem ipsum dolor sit amet.
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class='posts-block section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-md-8' >
+
+								<div class='post' >
+
+									<div class='media' >
+										<img alt='symp' src='img/bg2.jpg' >
+									</div>
+
+									<div class='content' >
+
+										<h4>
+											<a href='post.html' >
+												Simple Post With Image
+											</a>
+										</h4>
+
+										<ul class='post-icons' >
+
+											<li>
+												<i class='ion-ios-person' ></i>
+												<span>Sinai Park</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-clock' ></i>
+												<span>14 June 2015</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>5</span>
+											</li>
+
+
+
+										</ul>
+
+										<p>
+											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
+										</p>
+
+										<a href='post.html' class='read-more' >
+											Read More
+											<i class='ion-ios-arrow-thin-right' ></i>
+										</a>
+
+									</div>
+
+								</div>
+
+								<div class='post' >
+
+									<div class='media' >
+										<img alt='symp' src='img/bg2.jpg' >
+									</div>
+
+									<div class='content' >
+
+										<h4>
+											<a href='post.html' >
+												Simple Post With Image
+											</a>
+										</h4>
+
+										<ul class='post-icons' >
+
+											<li>
+												<i class='ion-ios-person' ></i>
+												<span>Sinai Park</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-clock' ></i>
+												<span>14 June 2015</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>5</span>
+											</li>
+
+
+
+										</ul>
+
+										<p>
+											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
+										</p>
+
+										<a href='post.html' class='read-more' >
+											Read More
+											<i class='ion-ios-arrow-thin-right' ></i>
+										</a>
+
+									</div>
+
+								</div>
+
+								<div class='post' >
+
+									<div class='media' >
+										<img alt='symp' src='img/bg2.jpg' >
+									</div>
+
+									<div class='content' >
+
+										<h4>
+											<a href='post.html' >
+												Simple Post With Image
+											</a>
+										</h4>
+
+										<ul class='post-icons' >
+
+											<li>
+												<i class='ion-ios-person' ></i>
+												<span>Sinai Park</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-clock' ></i>
+												<span>14 June 2015</span>
+											</li>
+
+											<li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>5</span>
+											</li>
+
+
+
+										</ul>
+
+										<p>
+											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
+										</p>
+
+										<a href='post.html' class='read-more' >
+											Read More
+											<i class='ion-ios-arrow-thin-right' ></i>
+										</a>
+
+									</div>
+
+								</div>
+
+								<div class='post-more' >
+									<a href='#' class='more-link' >
+										Load More
+									</a>
+								</div>
+
+							</div>
+
+							<div class='col-md-4' >
+
+								<div class='sidebar' >
+
+									<div class='sidebar-widget' >
+
+										<div class='search-box' >
+
+											<input type='text' placeholder='Search' class='search-input' >
+
+											<a class='search-btn' href='#' >
+												<i class='ion-ios-search' ></i>
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class='sidebar-widget' >
+										<div class='categories-widget' >
+
+											<div class='widget-header' >
+												<h4>
+													<i class='ion-ios-folder' ></i> Categories
+												</h4>
+											</div>
+
+											<ul class='sidebar-list' >
+
+												<li>
+													<a href='#' >Web Design</a>
+												</li>
+
+												<li>
+													<a href='#' >Travel</a>
+												</li>
+
+												<li>
+													<a href='#' >Life Style</a>
+												</li>
+
+												<li>
+													<a href='#' >Photography</a>
+												</li>
+
+												<li>
+													<a href='#' >Technology</a>
+												</li>
+
+
+
+											</ul>
+
+										</div>
+									</div>
+
+									<div class='sidebar-widget' >
+
+										<div class='widget-header' >
+											<h4>
+												<i class='ion-document' ></i>
+												Recent Posts
+											</h4>
+										</div>
+
+
+											<ul class='sidebar-list' >
+
+												<li>
+													<a href='#' >
+														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
+													</a>
+												</li>
+
+												<li>
+													<a href='#' >
+														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
+													</a>
+												</li>
+
+												<li>
+													<a href='#' >
+														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
+													</a>
+												</li>
+
+												<li>
+													<a href='#' >
+														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
+													</a>
+												</li>
+
+
+
+											</ul>
+
+
+									</div>
+
+									<div class='sidebar-widget' >
+										<div class='widget-header' >
+
+											<h4>
+												<i class='ion-archive' ></i>
+												Archives
+											</h4>
+
+											<ul class='sidebar-list' >
+
+												<li>
+													<a href='#' >
+														June (14)
+													</a>
+												</li>
+
+												<li>
+													<a href='#' >
+														July (10)
+													</a>
+												</li>
+
+												<li>
+													<a href='#' >
+														August(6)
+													</a>
+												</li>
+
+
+												<li>
+													<a href='#' >
+														September(7)
+													</a>
+												</li>
+
+
+
+											</ul>
+
+										</div>
+									</div>
+
+									<div class='sidebar-widget' >
+										<div class='widget-header' >
+											<h4>
+												<i class='ion-ios-pricetag' ></i>
+												Tags
+											</h4>
+										</div>
+
+										<ul class='sidebar-list list-inline' >
+											<li>
+												<a href='#' >Design</a>
+											</li>
+											<li>
+												<a href='#' >Tech</a>
+											</li>
+											<li>
+												<a href='#' >Web</a>
+											</li>
+											<li>
+												<a href='#' >Modern</a>
+											</li>
+											<li>
+												<a href='#' >Photography</a>
+											</li>
+											<li>
+												<a href='#' >Life</a>
+											</li>
+											<li>
+												<a href='#' >App</a>
+											</li>
+											<li>
+												<a href='#' >Template</a>
+											</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+								<li>
+									<a href='https://www.linkedin.com/in/sinai-park-755b72173/'>
+										<i class='ion-social-linkedin'></i>
+									</a>
+								</li>
+								<li>
+									<a href='https://vsco.co/sinai0228/gallery'>
+										<i class='ion-ios-camera'></i>
+									</a>
+								</li>
+								<li>
+									<a href='www.sinai228.github.com'>
+										<i class='ion-social-github'></i>
+									</a>
+								</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Blog Section
+			===============================================================================-->
+
+
+			<!--=============================================================================
+				Contact Section
+			===============================================================================-->
+			<section id='contact' class='contact-section section' >
+
+				<div class='contact-block section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-md-6 col-md-offset-3' >
+
+								<div class='section-header text-center' >
+									<h2 class='animate text-over-block' >Contact Me</h2>
+									<!--divider-->
+									<div class='divider-draft center' ></div>
+									<!--/divider-->
+									<p>
+										I'm available for freelancing. If you want something to be built or just to say hi, feel free to shoot me a message.
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class='row' >
+							<div class='col-md-8 col-md-offset-2' >
+
+								<form id='contact-form' class='contact-form' action='mail.php' method='post' data-toggle='validator' >
+
+									<div id='contact-form-result' ></div>
+
+									<div class='row' >
+
+										<div class='col-md-6' >
+
+											<div class='form-group' >
+												<input type='text' class='form-control' placeholder='Name' required>
+
+												<div class='help-block with-errors' ></div>
+											</div>
+
+										</div>
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='email' class='form-control' placeholder='Email' required>
+
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class='row' >
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='text' class='form-control' placeholder='Phone' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='text' class='form-control' placeholder='Website' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class='form-group' >
+										<textarea rows='5' class='form-control' placeholder='Message' required></textarea>
+										<div class='help-block with-errors' ></div>
+									</div>
+
+									<div class='form-group text-center' >
+										<button type='submit' class='symp-btn' >Send Message</button>
+									</div>
+
+
+								</form>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Sinai Park</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.linkedin.com/in/sinai-park-755b72173/'>
+											<i class='ion-social-linkedin'></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://vsco.co/sinai0228/gallery'>
+											<i class='ion-ios-camera'></i>
+										</a>
+									</li>
+									<li>
+										<a href='www.sinai228.github.com'>
+											<i class='ion-social-github'></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Contact Section
+			===============================================================================-->
+
+
+			<!--close button-->
+			<div class='close-btn' >
+				<span></span>
+				<span></span>
+			</div>
+			<!--/close button-->
+
+
+		</div>
+		<!--=============================================================================
+			/Main Wrapper
+		===============================================================================-->
+
+
+		<!--=============================================================================
+			JavaScript Files
+		===============================================================================-->
+		<script src='js/jquery.min.js' ></script>
+		<script src='js/jquery.stellar.min.js' ></script>
+		<script src='js/modernizr.js' ></script>
+		<script src='js/owl.carousel.min.js' ></script>
+		<script src='js/jquery.shuffle.min.js' ></script>
+		<script src='js/jquery.magnific-popup.min.js' ></script>
+		<script src='js/validator.min.js' ></script>
+		<script src='js/smoothscroll.js' ></script>
+		<script src='js/script.js' ></script>
+
+
+
+	</body>
+
+</html>
